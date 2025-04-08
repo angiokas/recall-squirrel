@@ -1,4 +1,4 @@
-from recall_squirrel.db import start_engine
+from recall_squirrel.session_management import start_engine
 from recall_squirrel.models import (
     Base,
     Flashcard,

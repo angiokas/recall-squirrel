@@ -12,11 +12,15 @@ dependencies = [
     "click>=8.1.8",
     "flake8>=7.2.0",
     "isort>=6.0.1",
+    "pathvalidate>=3.2.3",
     "platformdirs>=4.3.7",
     "rich>=14.0.0",
     "sqlalchemy>=2.0.40",
     "sqlalchemy-utils>=0.41.2",
 ]
+
+[tool.black]
+line-length = 88
 
 [project.scripts]
 recall-squirrel = "recall_squirrel:main"

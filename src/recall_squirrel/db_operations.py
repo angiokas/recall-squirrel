@@ -1,6 +1,8 @@
 from .models import Base, Flashcard, Studyset, FlashcardStudyset, Difficulty
+from .session_management import get_session
 from sqlalchemy import inspect
 
+Session = get_session()
 
 def create_flashcard(
     Session, f_question: str, f_answer: str, studyset_name: str = None
